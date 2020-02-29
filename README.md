@@ -1,2 +1,1 @@
-# docs
-Bugphix documentation
+## Hello world
