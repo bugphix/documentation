@@ -15,12 +15,12 @@ module.exports = {
     prevLinks: true,
     sidebar: [
       {
-        title: 'Installation',
-        path: '/installation/',
-      },
-      {
         title: 'Introduction',
         path: '/introduction/',
+      },
+      {
+        title: 'Installation',
+        path: '/installation/',
       },
       {
         title: 'Application usage',
