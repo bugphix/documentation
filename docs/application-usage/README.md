@@ -18,20 +18,26 @@ public function report(Exception $exception)
 
 ## Capture user details
 
-```php{6,7,8,9,10,13}
+- `->configUser()`
+- First param: any - unqiue identifier
+- Second param: array - additional custom parameters
+
+```php{6,7,8,9,10,11,12,13,14,15,16}
 public function report(Exception $exception)
 {
     // add this code block before parent::report($exception);
     if (app()->bound('bugphix') && $this->shouldReport($exception)) {
 
-        $userUnique = Auth::user()->id;
-        $userMeta = array(
-            'name' => 'John Doe',
-            'email' => 'johndoe@email.com',
-        );
+        if(Auth::check()){
+            $userUnique = Auth::user()->id;
+            $userMeta = array(
+                'name' => Auth::user()->name,
+                'email' => Auth::user()->email,
+            );
+        }
 
         app('bugphix')
-            ->configUser($userUnique, $userMeta)
+            ->configUser($userUnique ?? '', $userMeta ?? [])
             ->catchError($exception);
     }
 
