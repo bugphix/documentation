@@ -16,6 +16,30 @@ public function report(Exception $exception)
 }
 ```
 
+## Capture user details
+
+```php{6,7,8,9,10,13}
+public function report(Exception $exception)
+{
+    // add this code block before parent::report($exception);
+    if (app()->bound('bugphix') && $this->shouldReport($exception)) {
+
+        $userUnique = Auth::user()->id;
+        $userMeta = array(
+            'name' => 'John Doe',
+            'email' => 'johndoe@email.com',
+        );
+
+        app('bugphix')
+            ->configUser($userUnique, $userMeta)
+            ->catchError($exception);
+    }
+
+    parent::report($exception);
+}
+```
+
+
 ## Updating config file
 
 - File: `/config/bugphix.php`

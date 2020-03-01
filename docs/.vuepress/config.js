@@ -1,4 +1,5 @@
 module.exports = {
+  title: 'Bugphix',
   description: 'Capture and monitor detailed error logs with nice dashboard and UI',
   markdown: {
     lineNumbers: true
@@ -28,6 +29,10 @@ module.exports = {
       {
         title: 'Dashboard',
         path: '/dashboard/',
+      },      
+      {
+        title: 'Features',
+        path: '/features/',
       }
     ]
   }
