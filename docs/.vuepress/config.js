@@ -35,5 +35,13 @@ module.exports = {
         path: '/features/',
       }
     ]
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': '' // UA-00000000-0
+      }
+    ]
+  ]
 }

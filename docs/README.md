@@ -1,5 +1,12 @@
 ---
 home: true
+meta:
+- name: "google-site-verification"
+  content: "grBSixqAPx4dSSDCPPhJ5fVwmacRU_uFXU4pUl69Vv4"
+- name: "og:description"
+  content: Capture and monitor detailed error logs with nice dashboard and UI
+- name: description
+  content: Capture and monitor detailed error logs with nice dashboard and UI
 heroImage: /home-logo.png
 heroText: 'Bugphix'
 tagline: Capture and monitor detailed error logs with nice dashboard and UI
