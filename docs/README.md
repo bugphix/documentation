@@ -1,11 +1,13 @@
 ---
 home: true
 meta:
-- name: "google-site-verification"
-  content: "grBSixqAPx4dSSDCPPhJ5fVwmacRU_uFXU4pUl69Vv4"
-- name: "og:description"
-  content: Capture and monitor detailed error logs with nice dashboard and UI
+- name: "keywords"
+  content: error,error-catcher,error-handler,error-manager,error-monitoring,error-watcher,error-viewer,error-logger,bugphix,bugphix-laravel,laravel-bugphix,laravel-error,laravel
+- name: "robots"
+  content: index, follow
 - name: description
+  content: Capture and monitor detailed error logs with nice dashboard and UI
+- name: "og:description"
   content: Capture and monitor detailed error logs with nice dashboard and UI
 heroImage: /home-logo.png
 heroText: 'Bugphix'
