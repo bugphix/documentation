@@ -19,8 +19,8 @@ public function report(Exception $exception)
 ## Capture user details
 
 - `->configUser()`
-- First param: any - unqiue identifier
-- Second param: array - additional custom parameters
+- 1st parameter: [ANY] - unique identifier
+- 2nd parameter: [ARRAY] - additional custom parameters
 
 ```php{6,7,8,9,10,11,12,13,14,15,16}
 public function report(Exception $exception)
