@@ -2,16 +2,8 @@
 
 ## Server requirements
 
-- Laravel
-- PHP >= 7.2.0
-- BCMath PHP Extension
-- Ctype PHP Extension
-- JSON PHP Extension
-- Mbstring PHP Extension
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
+- [Check Laravel 6 requirements](https://laravel.com/docs/6.x#server-requirements)
+- [Check Laravel 7 requirements](https://laravel.com/docs/7.x#server-requirements)
 
 ## Download package
 
@@ -28,4 +20,10 @@ php artisan vendor:publish --tag=bugphix-config
 ## Run bugphix installer
 ```sh
 php artisan bugphix:install
+```
+
+### Test command
+
+```sh
+php artisan bugphix:test
 ```
