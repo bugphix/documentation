@@ -1,9 +1,6 @@
 module.exports = {
   title: 'Bugphix',
   description: 'Capture and monitor detailed error logs with nice dashboard and UI',
-  markdown: {
-    lineNumbers: true
-  },
   themeConfig: {
     logo: '/small-logo.png',
     nav: [
@@ -13,6 +10,7 @@ module.exports = {
     ],
     nextLinks: true,
     prevLinks: true,
+    lastUpdated: 'Last Updated',
     sidebar: [
       {
         title: 'Introduction',
@@ -37,11 +35,14 @@ module.exports = {
     ]
   },
   plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
+    ['@vuepress/back-to-top'],
+    ['@vuepress/google-analytics',{
         'ga': 'UA-160019077-1'
       }
-    ]
+    ],
+    ['@vuepress/active-header-links', {
+      sidebarLinkSelector: '.sidebar-link',
+      headerAnchorSelector: '.header-anchor'
+    }]
   ]
 }

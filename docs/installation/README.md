@@ -22,6 +22,14 @@ php artisan vendor:publish --tag=bugphix-config
 php artisan bugphix:install
 ```
 
+### Optional
+
+### Create symlink to dashboard files manually
+
+```sh
+php artisan bugphix:assets-symlink
+```
+
 ### Test command
 
 ```sh
